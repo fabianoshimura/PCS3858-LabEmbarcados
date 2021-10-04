@@ -17,12 +17,9 @@ Comandos para instalar as dependências:
   python3 -m pip install pyautogui
 
 
-
-  sudo apt-get install libhdf5-dev
-
   
 
-ImportError: libcblas.so.3: cannot open shared object file: No such file or directory
+Se faltar alguma coisa:
 pip3 install opencv-python 
 sudo apt-get install libcblas-dev
 sudo apt-get install libhdf5-dev
