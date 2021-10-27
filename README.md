@@ -12,3 +12,13 @@ OpencvPythonAirDrum/README.md
 3. Módulo de sensor do bumbo (botão)
 
 
+sudo rpi-update
+sudo apt-get install cmake
+sudo apt-get install python3-pip
+sudo apt-get install python3-opencv
+pip3 install opencv-python
+
+pip3 install --upgrade imutils
+pip3 install pyautogui
+
+
