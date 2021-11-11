@@ -12,7 +12,14 @@ OpencvPythonAirDrum/README.md
 3. Módulo de sensor do bumbo (botão)
 
 
+COMANDOS para RPI4
+
 sudo rpi-update
+
+baixar PyCharm
+sudo apt install default-jdk
+
+
 sudo apt-get install cmake
 sudo apt-get install python3-pip
 sudo apt-get install python3-opencv
@@ -21,4 +28,13 @@ pip3 install opencv-python
 pip3 install --upgrade imutils
 pip3 install pyautogui
 
+
+sudo apt-get install libhdf5-dev libhdf5-serial-dev libhdf5-103
+sudo apt-get install libqtgui4 libqtwebkit4 libqt4-test
+sudo apt-get install libatlas-base-dev
+
+Erro 
+Building wheel for opencv-python (pyproject.toml) ... 
+Trava e não instala opencv-python
+Baixar versão anterior!!!
 
