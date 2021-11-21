@@ -38,3 +38,11 @@ Building wheel for opencv-python (pyproject.toml) ...
 Trava e não instala opencv-python
 Baixar versão anterior!!!
 
+
+AIR-DRUMS (https://github.com/kaustubh-sadekar/AIR_Drums.git)
+
+
+ERROR
+raspberry NotImplementedError: mixer module not available (ImportError: libSDL2_mixer-2.0.so.0: cannot open shared object file: No such file or directory)
+Instalar:
+sudo apt-get install libsdl2-mixer-2.0-0
