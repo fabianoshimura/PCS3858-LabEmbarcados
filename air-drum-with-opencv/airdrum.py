@@ -1,4 +1,6 @@
 #onemotion.com
+import time
+
 import cv2
 import numpy as np
 import pyautogui
@@ -15,9 +17,9 @@ while True:
     frame = imutils.resize(frame,height=700, width=900)
 
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
-    
-    lowred = np.array([131,90,106])
-    highred = np.array([255,255,255])
+
+    lowred = np.array([196,67,65])
+    highred = np.array([158,29,35])
 
     lowblue = np.array([40,150,116])
     highblue = np.array([255,255,255])
@@ -63,47 +65,8 @@ while True:
     for cnt in contours:
         (x,y,w,h) = cv2.boundingRect(cnt)
         cv2.rectangle(frame,(x,y),(x + w, y + h),(0,255,0),2)
-        print((x,y))   
-        if x > 0 and y > 0 and x < 200 and y < 150:
-            Press('7') #RIDE
-            break      
-        if x > 210 and y > 0  and x < 430 and y < 150:
-            Press('8') #RIDE BELL
-            break      
-        if x > 440 and y > 0 and x < 650 and y < 150:
-            Press('6') #HIT HAT CLOSE
-            break      
-        if x > 660 and y > 0 and x < 900 and y < 150:
-            Press('9') #CRASH
-            break      
-        
-        
-        if x > 0 and y > 160 and x < 50 and y < 370:
-            Press('2') #SNARE
-            break      
-        if x > 0 and y > 380 and x < 50 and y < 570:
-            Press('3') #SNARE RIM
-            break      
-        if x > 850 and y > 160 and x < 900 and y < 370:
-            Press('4') #HIT HAT 
-            break      
-        if x > 850 and y > 380 and x < 900 and y < 570:
-            Press('5') #HIT HAT OPEN 
-            break      
-        
-        
-        if x > 0 and y > 580 and x < 200 and y < 700:
-            Press('q') #TOM HI
-            break      
-        if x > 210 and y > 580 and x < 430 and y < 700:
-            Press('w') #TOM MID
-            break      
-        if x > 440 and y > 580 and x < 650 and x < 700:
-            Press('e') #TOM LOW 
-            break      
-        if x > 660 and y > 580 and x < 900 and y < 700:
-            Press('1') #HIT HAT OPEN 
-            break      
+        #print((x,y))
+
         break
     
     #for the blue Object
@@ -113,53 +76,15 @@ while True:
     for cnt in contours:
         (x,y,w,h) = cv2.boundingRect(cnt)
         cv2.rectangle(frame,(x,y),(x + w, y + h),(0,255,0),2)
-        print((x,y))
-        if x > 0 and y > 0 and x < 200 and y < 150:
-            Press('7') #RIDE
-            break      
-        if x > 210 and y > 0  and x < 430 and y < 150:
-            Press('8') #RIDE BELL
-            break      
-        if x > 440 and y > 0 and x < 650 and y < 150:
-            Press('6') #HIT HAT CLOSE
-            break      
-        if x > 660 and y > 0 and x < 900 and y < 150:
-            Press('9') #CRASH
-            break      
-        
-        
-        if x > 0 and y > 160 and x < 50 and y < 370:
-            Press('2') #SNARE
-            break      
-        if x > 0 and y > 380 and x < 50 and y < 570:
-            Press('3') #SNARE RIM
-            break      
-        if x > 850 and y > 160 and x < 900 and y < 370:
-            Press('4') #HIT HAT 
-            break      
-        if x > 850 and y > 380 and x < 900 and y < 570:
-            Press('5') #HIT HAT OPEN 
-            break      
-        
-        
-        if x > 0 and y > 580 and x < 200 and y < 700:
-            Press('q') #TOM HI
-            break      
-        if x > 210 and y > 580 and x < 430 and y < 700:
-            Press('w') #TOM MID
-            break      
-        if x > 440 and y > 580 and x < 650 and x < 700:
-            Press('e') #TOM LOW 
-            break      
-        if x > 660 and y > 580 and x < 900 and y < 700:
-            Press('1') #HIT HAT OPEN 
-            break           
+        #print((x,y))
+
+
         break
     
     
     cv2.imshow("frame", frame)
-    # cv2.imshow("mask", mask)
-    # cv2.imshow("res", res)
+    #cv2.imshow("mask", red_mask)
+    #cv2.imshow("res", res)
  
     key = cv2.waitKey(1)
     if key == 27:

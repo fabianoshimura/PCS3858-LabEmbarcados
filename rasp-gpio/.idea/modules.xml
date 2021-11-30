@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../air-drum-with-opencv/.idea/air-drum-with-opencv.iml" filepath="$PROJECT_DIR$/../air-drum-with-opencv/.idea/air-drum-with-opencv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../airdrum-app/.idea/airdrum-app.iml" filepath="$PROJECT_DIR$/../../airdrum-app/.idea/airdrum-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/rasp-gpio.iml" filepath="$PROJECT_DIR$/.idea/rasp-gpio.iml" />
     </modules>
   </component>
